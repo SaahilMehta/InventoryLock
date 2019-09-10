@@ -1,0 +1,9 @@
+name: InventoryLock
+main: me.darksoldier.invlock.Main
+author: DarkSolider
+version: 2.0.4
+permissions:
+  invlock.bypass:
+    description: Bypass permission for lock
+    default: false
+    

@@ -24,6 +24,7 @@ public class InvEvents implements Listener{
 			p.updateInventory();
 		}
 		
+		
 	}
 	
 	@EventHandler
@@ -39,7 +40,8 @@ public class InvEvents implements Listener{
 	@EventHandler
 	public void dropEvent(PlayerDropItemEvent e) {
 		Player p = e.getPlayer();
-		if(!hasBypassPermission(p) && playerInWorld(p)) {
+		if(p.getInventory().getHeldItemSlot() == 4) {
+//		if(!hasBypassPermission(p) && playerInWorld(p)) {
 			e.setCancelled(true);
 			p.updateInventory();
 		}

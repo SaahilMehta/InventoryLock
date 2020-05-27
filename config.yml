@@ -1,5 +1,4 @@
 enabled-worlds:
   - world
   
-enabled-slots:
-  - *
+enabled-slots: [] # When the list is empty, all slots will be locked.

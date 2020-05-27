@@ -17,7 +17,7 @@ public class Main extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		plugin = this;
-//		this.saveDefaultConfig();
+		this.saveDefaultConfig();
 		this.getConfig().options().copyDefaults(true);
 		this.saveConfig();
 		
@@ -26,7 +26,7 @@ public class Main extends JavaPlugin{
 	
 	@Override
 	public void onDisable() {
-		this.saveConfig();
+		//this.saveConfig();
 	}	
 	
 	
